@@ -2,6 +2,23 @@
     {
         "quote": "If you want to lift yourself up, lift up someone else.",
         "author": "Booker T. Washington",
-        "tags": [2]
+        "tags": ["happy"]
+    },
+    {
+        "quote": "I'm not superstitious, but I am a little stitious.",
+        "author": "Michael Scott",
+        "tags": ["funny"]
+    },
+    {
+        "quote": "test 2",
+        "author": "test 2"
+    },
+    {
+        "quote": "test 3",
+        "author": "test 3"
+    },
+    {
+        "quote": "test 4",
+        "author": "test 4"
     }
 ]
