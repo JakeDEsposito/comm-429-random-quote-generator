@@ -10,15 +10,17 @@
         "tags": ["funny"]
     },
     {
-        "quote": "test 2",
-        "author": "test 2"
+        "quote": "The way to get started is to quit talking and begin doing.",
+        "author": "Walt Disney"
     },
     {
-        "quote": "test 3",
-        "author": "test 3"
+        "quote": "You are enough just as you are.",
+        "author": "Meghan Markle",
+        "tags": ["happy"]
     },
     {
-        "quote": "test 4",
-        "author": "test 4"
+        "quote": "I choose a lazy person to do a hard job, because a lazy person will find an easy way to do it.",
+        "author": "Bill Gates",
+        "tags": ["funny"]
     }
 ]
