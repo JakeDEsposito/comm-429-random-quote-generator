@@ -1,7 +1,20 @@
-$.getJSON("../res/quotes.json", (quotes) => {
-    const tags = quotes.filter(({ tags }) => tags).map(({ tags }) => tags).flat()
+const populateTagsDropDown = () => {
+    const tags = document.getElementById('tags')
+    const existingTags = []
 
-    $.each(tags, (_i, tag) => $("#tags").append(`
-        <option value="${tag}">${tag.charAt(0).toUpperCase() + tag.slice(1)}</option>
-    `))
-})
+    fetch("../res/quotes.json").then(data => data.json()).then(quotes => quotes.filter(({ tags }) => tags).map(({ tags }) => tags).flat())
+    .then(ts => {
+        for (const tag of ts) {
+            if(!existingTags.includes(tag)) {
+                existingTags.push(tag)
+
+                const newElem = document.createElement('option')
+                newElem.setAttribute("value", tag)
+                newElem.innerHTML = tag.charAt(0).toUpperCase() + tag.slice(1)
+                tags.appendChild(newElem)
+            }
+        }
+    })
+}
+
+populateTagsDropDown()

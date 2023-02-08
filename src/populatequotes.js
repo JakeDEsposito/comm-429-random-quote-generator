@@ -1,23 +1,25 @@
 const populateQuotes = (tag) => {
-    $("#quotes").empty()
+    const quotes = document.getElementById('quotes');
 
-    $.getJSON("../res/quotes.json", (quotes) => {
-    
+    while(quotes.firstElementChild)
+        quotes.firstElementChild.remove()
+
+    fetch("../res/quotes.json").then(data => data.json()).then(quotes => {
         if (tag)
-            quotes = quotes.filter(({ tags }) => tags).filter(({ tags }) => tags.includes(tag))
-    
-        $.each(quotes, (_i, { quote, author, tags }) => {
-
-            $("#quotes").append(`
+            return quotes.filter(({ tags }) => tags).filter(({ tags }) => tags.includes(tag))
+        return quotes
+    }).then(qs => {
+        for(const { quote, author, tags } of qs) {
+            const newElem = document.createElement('article')
+            newElem.innerHTML = `
                 <article>
                     <h2>${quote}</h2>
                     ${author}
-                    ${tags ? tags : ""}
+                    ${tags ? tags.map(tag => tag.charAt(0).toUpperCase() + tag.slice(1)) : ""}
                 </article>
-            `)
-
-        })
-
+            `
+            quotes.appendChild(newElem)
+        }
     })
 }
 
