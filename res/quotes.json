@@ -22,5 +22,92 @@
         "quote": "I choose a lazy person to do a hard job, because a lazy person will find an easy way to do it.",
         "author": "Bill Gates",
         "tags": ["funny"]
+    },
+    {
+        "quote": "Man is not sum of what he has already, but rather the sum of what he does not yet have, of what he could have.",
+        "author": "Jean Paul"
+    },
+    {
+        "quote": "Nine-tenths of wisdom is being wise in time.",
+        "author": "Theodore Roosevelt",
+        "tags": ["wisdom"]
+    },
+    {
+        "quote": "Dost thou love life? Then do not squander time, for that is the stuff life is made of.",
+        "author":"Benjamin Franklin",
+        "tags":["wisdom"]
+    },
+    {
+        "quote": "The person who lives life fully, glowing with life's energy, is the person who lives a successful life.",
+        "author":"Daisaku Ikeda"
+    },
+    {
+        "quote": "Fear not for the future, weep not for the past.",
+        "author":"Percy Bysshe Shelley",
+        "tags":["wisdom"]
+    },
+    {
+        "quote":"We've got to have a dream if we are going to make a dream come true.",
+        "author":"Walt Disney"
+    },
+    {
+        "quote": "I cannot make my days longer, so I strive to make them better.",
+        "author":"Henry David Thoreau",
+        "tags":["wisdom"]
+    },
+    {
+        "quote": "Whenever you have eliminated the impossible, whatever remains, however improbable, must be the truth.",
+        "author":"Arthur Conan Doyle"
+    },
+    {
+        "quote": "The world turns aside to let any man pass who knows where he is going.",
+        "author":"Epictetus"
+    },
+    {
+        "quote": "Let yourself be silently drawn by the stronger pull of what you really love.",
+        "author":"Rumi"
+    },
+    {
+        "quote": "We have committed the Golden Rule to memory; let us now commit it to life.",
+        "author":"Edwin Markham"
+    },
+    {
+        "quote": "Genuine love should first be directed at oneself; if we do not love ourselves, how can we love others?",
+        "author":"Dalai Lama",
+        "tags": ["wisdom"]
+    },
+    {
+        "quote": "Many men go fishing all of their lives without knowing that it is not fish they are after.",
+        "author":"Henry David Thoreau"
+    },
+    {
+        "quote": "One's friends are that part of the human race with which one can be human.",
+        "author":"George Santayana",
+        "tags":["friendship"]
+    },
+    {
+        "quote": "Mistakes are the usual bridge between inexperience and wisdom.",
+        "author":"Phyllis Grissim-Theroux",
+        "tags":["wisdom"]
+    },
+    {
+        "quote": "Until you value yourself, you won't value your time. Until you value your time, you won't do anything with it.",
+        "author":"M. Scott Peck",
+        "tags":["wisdom"]
+    },
+    {
+        "quote": "You really can change the world if you care enough.",
+        "author":"Marian Wright Edelman",
+        "tags":["wisdom"]
+    },
+    {
+        "quote": "Experience is simply the name we give our mistakes.",
+        "author":"Oscar Wilde",
+        "tags":["wisdom"]
+    },
+    {
+        "quote": "You will never be happy if you continue to search for what happiness consists of. You will never live if you are looking for the meaning of life.",
+        "author":"Albert Camus",
+        "tags": ["happy"]
     }
 ]
