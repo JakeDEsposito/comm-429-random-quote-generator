@@ -6,6 +6,7 @@ const addQuote = (quote, author, tag) => addedQuotes.push({
 
 document.getElementById('addQuote').addEventListener('submit', function (e) {
     e.preventDefault()
+
     const form = document.getElementById('addQuote')
 
     const quote = form.elements['quote'].value
@@ -13,7 +14,7 @@ document.getElementById('addQuote').addEventListener('submit', function (e) {
     const tag = form.elements['tag'].value
 
     addQuote(quote, author, tag.toLowerCase())
-
+    
     form.setAttribute("hidden", false)
 
     populateQuotes()
@@ -24,7 +25,7 @@ document.getElementById('addQuote').addEventListener('submit', function (e) {
 const showAddQuote = () => document.getElementById('addQuote').removeAttribute("hidden")
 
 const populateQuotes = (tag) => {
-    const quotes = document.getElementById('quotes');
+    const quotes = document.getElementById('quotes')
 
     while(quotes.firstElementChild)
         quotes.firstElementChild.remove()
