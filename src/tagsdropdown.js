@@ -2,6 +2,9 @@ const populateTagsDropDown = () => {
     const tags = document.getElementById('tags')
     const existingTags = []
 
+    while(tags.firstElementChild)
+        tags.firstElementChild.remove()
+
     fetch("../res/quotes.json").then(data => data.json()).then(quotes => quotes.filter(({ tags }) => tags).map(({ tags }) => tags).flat())
     .then(ts => {
         for (const tag of ts) {
