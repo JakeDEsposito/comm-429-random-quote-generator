@@ -5,6 +5,11 @@ const populateTagsDropDown = () => {
     while(tags.firstElementChild)
         tags.firstElementChild.remove()
 
+    const newElem = document.createElement('option')
+    newElem.setAttribute("value", "all")
+    newElem.innerHTML = "All"
+    tags.appendChild(newElem)
+
     fetch("../res/quotes.json").then(data => data.json()).then(quotes => quotes.filter(({ tags }) => tags).map(({ tags }) => tags).flat())
     .then(ts => {
         for (const tag of ts) {
