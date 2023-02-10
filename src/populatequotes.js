@@ -30,7 +30,7 @@ const populateQuotes = (tag) => {
     while(quotes.firstElementChild)
         quotes.firstElementChild.remove()
 
-    fetch("../res/quotes.json").then(data => data.json()).then(quotes => [...addedQuotes, ...quotes]).then(quotes => {
+    fetch("./../res/quotes.json").then(data => data.json()).then(quotes => [...addedQuotes, ...quotes]).then(quotes => {
         if (tag)
             return quotes.filter(({ tags }) => tags).filter(({ tags }) => tags.includes(tag))
         return quotes
